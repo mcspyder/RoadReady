@@ -1,0 +1,121 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@700&display=swap"); /* Adds a clean, modern font */
+@import url("https://db.onlinewebfonts.com/c/2bd3372d24f66349c0f3c5d10d0735c8?family=Snell+Roundhand+Script+V2");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto Condensed', sans-serif;
+    background-color: #1b1b1b;
+    color: #e0e0e0;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px 32px;
+    background: linear-gradient(145deg, #333333, #444444);
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.7);
+    border-bottom: 3px solid #cf8831;
+}
+
+.nav-logo {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.nav-logo img {
+    width: 80px; /* Slightly smaller for a refined look */
+    height: auto;
+    filter: drop-shadow(2px 4px 6px rgba(0, 0, 0, 0.7)); /* Adds depth to logo */
+}
+
+.nav-logo p {
+    color: #cf8831;
+    font-size: 38px;
+    font-family: 'Snell Roundhand Script V2', cursive;
+    font-weight: 600;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5); /* Soft glow for elegant effect */
+    letter-spacing: 1px;
+    transition: color 0.3s ease; /* Adds a color transition on hover */
+}
+
+.nav-logo p:hover {
+    color: #e0e0e0; /* Change text color on hover */
+}
+
+.nav-menu {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+
+.nav-menu li {
+    color: #e0e0e0;
+    font-size: 16px;
+    font-weight: 600;
+    position: relative;
+    cursor: pointer;
+    padding: 5px;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.nav-menu li:hover {
+    color: #cf8831;
+    transform: translateY(-2px); /* Subtle lift effect */
+}
+
+.nav-menu li::after {
+    content: "";
+    display: block;
+    width: 0;
+    height: 2px;
+    background: #cf8831;
+    transition: width 0.3s;
+    margin-top: 5px;
+}
+
+.nav-menu li:hover::after {
+    width: 100%;
+}
+
+.nav-login-favs {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.nav-login-favs img {
+    width: 40px;
+    height: auto;
+    filter: drop-shadow(2px 2px 5px rgba(0, 0, 0, 0.5));
+    transition: transform 0.3s ease;
+}
+
+.nav-login-favs img:hover {
+    transform: scale(1.1); /* Slight zoom on hover */
+}
+
+.nav-login-favs button {
+    padding: 8px 16px;
+    font-size: 14px;
+    font-weight: 700;
+    color: #e0e0e0;
+    background-color: #cf8831;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.nav-login-favs button:hover {
+    background-color: #e0e0e0;
+    color: #cf8831;
+    transform: translateY(-2px);
+}
